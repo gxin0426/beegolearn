@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/gxin0426/beegolearn/utils"
+	utils "github.com/gxin0426/beegolearn/utils"
 )
 
 type User struct {

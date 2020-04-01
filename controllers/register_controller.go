@@ -5,10 +5,9 @@ import (
 	"time"
 
 	"github.com/astaxie/beego"
-	"github.com/gxin0426/beegolearn/model"
-	"github.com/gxin0426/beegolearn/utils"
+	model "github.com/gxin0426/beegolearn/models"
+	utils "github.com/gxin0426/beegolearn/utils"
 )
-
 
 type RegisterController struct {
 	beego.Controller
