@@ -3,10 +3,11 @@ package test
 import (
 	"net/http"
 	"net/http/httptest"
-	"testing"
-	"runtime"
 	"path/filepath"
-	_ "beegolearn/routers"
+	"runtime"
+	"testing"
+
+	_ "github.com/gxin0426/beegolearn/routers"
 
 	"github.com/astaxie/beego"
 	. "github.com/smartystreets/goconvey/convey"

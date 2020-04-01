@@ -1,11 +1,18 @@
 package main
 
 import (
-	_ "beegolearn/routers"
+	_ "github.com/gxin0426/beegolearn/routers"
+	"github.com/gxin0426/beegolearn/utils"
+
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/logs"
 )
 
 func main() {
-	beego.Run()
-}
 
+	logs.SetLevel(beego.LevelInformational)
+	logs.SetLogger("file", `{"filename": "logs/test.log"}`)
+	utils.InitMysql()
+	beego.Run()
+
+}
