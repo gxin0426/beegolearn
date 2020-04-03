@@ -50,6 +50,7 @@ func (this *RegisterController) Post() {
 	_, err := model.InsertUser(user)
 
 	if err != nil {
+		this.Redirect("/", 302)
 		this.Data["json"] = map[string]interface{}{"code": 0, "message": "failure"}
 
 	} else {

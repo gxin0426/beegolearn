@@ -1,11 +1,10 @@
 package main
 
 import (
-	_ "github.com/gxin0426/beegolearn/routers"
-	"github.com/gxin0426/beegolearn/utils"
-
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
+	_ "github.com/gxin0426/beegolearn/routers"
+	utils "github.com/gxin0426/beegolearn/utils"
 )
 
 func main() {

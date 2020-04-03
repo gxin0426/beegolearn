@@ -17,3 +17,48 @@
 2020/04/01 16:15:53.381 [I] [asm_amd64.s:1373]  http server Running on http://:9092
 2020/04/01 16:16:39.072 [I] [asm_amd64.s:1373]  http server Running on http://:9092
 2020/04/01 16:26:07.041 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 16:28:13.882 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 16:52:21.271 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 16:53:26.318 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:01:10.387 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:03:15.307 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:03:17.376 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:03:19.411 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:03:21.478 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:03:23.891 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:03:26.096 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:18:52.981 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:19:04.070 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:19:15.482 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:19:18.439 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:19:23.259 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:19:31.266 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:19:34.411 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 17:19:37.206 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 18:39:21.090 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 18:51:33.774 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 18:53:38.706 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/01 18:54:28.227 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 16:44:49.164 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 17:02:27.418 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 17:08:38.381 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 17:10:00.674 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 17:10:02.604 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 17:10:04.797 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 17:12:47.838 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 17:22:28.430 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 18:54:26.669 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 18:54:48.698 [C] [panic.go:967]  the request url is  /article/add
+2020/04/02 18:54:48.699 [C] [panic.go:967]  Handler crashed with error can't find templatefile in the path:views/wirte_article.html
+2020/04/02 18:54:48.700 [C] [panic.go:967]  c:/go/src/runtime/panic.go:967
+2020/04/02 18:54:48.701 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/template.go:75
+2020/04/02 18:54:48.702 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:306
+2020/04/02 18:54:48.703 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:257
+2020/04/02 18:54:48.703 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:237
+2020/04/02 18:54:48.704 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:865
+2020/04/02 18:54:48.705 [C] [panic.go:967]  c:/go/src/net/http/server.go:2807
+2020/04/02 18:54:48.705 [C] [panic.go:967]  c:/go/src/net/http/server.go:1895
+2020/04/02 18:54:48.706 [C] [panic.go:967]  c:/go/src/runtime/asm_amd64.s:1373
+2020/04/02 18:54:48.706 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/04/02 18:55:42.361 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/02 19:01:27.410 [I] [asm_amd64.s:1373]  http server Running on http://:9092

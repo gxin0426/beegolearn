@@ -1,0 +1,42 @@
+{
+    
+    "go.buildOnSave": true,
+    "go.lintOnSave": false,
+    "go.vetOnSave": true,
+    "go.buildTags": "",
+    "go.buildFlags": [],    
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.coverOnSave": true,
+    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.formatOnSave": true,
+    "go.formatTool": "goimports",
+    "go.gocache": "F:\\GOCACHE",
+    
+    "go.gotooldir": "c:\\go\\pkg\\tool\\windows_amd64",
+    "go.gopath": "F:\\go_project",
+    "go.gocodeAutoBuild": false,
+    "window.zoomLevel": 1,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDelete": false,
+    
+    "editor.stablePeek": true,
+    
+    "go.useLanguageServer": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "workbench.colorTheme": "Winter is Coming (Dark Blue - No Italics)",
+    "goOutliner.extendExplorerTab": true,
+    "files.autoSave": "off",
+
+
+    
+   
+    
+    
+}
