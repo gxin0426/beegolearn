@@ -38,21 +38,18 @@ func FindArticleWithPage(page int) ([]Article, error) {
 	page--
 	fmt.Println("page:", page)
 
-	return
+	return QueryArticleWithPage(page, num), nil
 }
 
 func QueryArticleWithPage(page, num int) ([]Article, error) {
 	sql := fmt.Sprintf("limit %d, %d", page*num, num)
-
-	r
+	return QueryArticlesWithCon(sql), nil
 }
 
 func QueryArticlesWithCon(sql string) []Article {
 	sql = "select id, title, tags, short, content, author, createtime, from article" + sql
 	rows := utils.QueryRowDB(sql)
-
 	var artList []Article
-
 	for rows.Next() {
 		id := 0
 		title := ""
@@ -62,7 +59,6 @@ func QueryArticlesWithCon(sql string) []Article {
 		author := ""
 		var createtime int64
 		createtime = 0
-
 		rows.Scan(&id, &title, &tags, &short, &content, &author, &createtime)
 		art := Article{id, title, tags, short, content, author, createtime}
 		artList = append(artList, art)

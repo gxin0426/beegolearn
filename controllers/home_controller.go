@@ -3,7 +3,7 @@ package controllers
 import (
 	"fmt"
 
-	model "github.com/gxin0426/beegolearn/models"
+	model "github.com/gxin0426/beegolearn/model"
 )
 
 type HomeController struct {
@@ -12,17 +12,30 @@ type HomeController struct {
 
 func (this *HomeController) Get() {
 
+	//分页  http://localhost:8080?page=2
+	//标签  http://localhost:8080?tag=web
+
+	tag := this.GetString("tag")
+
+	fmt.Println("tag:", tag)
+
 	page, _ := this.GetInt("page")
-	if page <= 0 {
-		page = 1
-	}
 
 	var artList []model.Article
-	artList = model.FindArticleWithPage(page)
 
-	this.Data["pageCode"] = 1
-	this.Data["HasFooter"] = true
+	if len(tag) > 0 {
+		artList, _ = model.QueryArticleWithTag(tag)
+		this.Data["HasFooter"] = false
+	} else {
+		if page <= 0 {
+			page = 1
+		}
 
+		artList, _ = model.FindArticleWithPage(page)
+
+		this.Data["pageCode"] = model.ConfigHomeFooterPageCode(page)
+		this.Data["HasFooter"] = true
+	}
 	fmt.Println("islogin:", this.IsLogin, this.Loginuser)
 	this.Data["Content"] = model.MakeHomeBlocks(artList, this.IsLogin)
 	this.TplName = "home.html"
