@@ -1,10 +1,9 @@
 package controllers
 
 import (
+	"beegotest/model"
 	"fmt"
 	"time"
-
-	model "github.com/gxin0426/beegolearn/models"
 )
 
 type AddArticleController struct {

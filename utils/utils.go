@@ -95,6 +95,10 @@ func QueryRowDB(sql string) *sql.Row {
 	return db.QueryRow(sql)
 }
 
+func QueryDB(sql string) (*sql.Rows, error) {
+	return db.Query(sql)
+}
+
 func MD5(text string) string {
 	ctx := md5.New()
 	ctx.Write([]byte(text))

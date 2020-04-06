@@ -19,6 +19,7 @@
     "explorer.confirmDelete": false,
     "editor.stablePeek": true,
     "go.useLanguageServer": true,
+    "go.lintFlags": ["--enable-all", "--new"],
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,

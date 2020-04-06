@@ -1,9 +1,10 @@
 package controllers
 
 import (
+	"beegotest/model"
+	utils "beegotest/utils"
+
 	"github.com/astaxie/beego"
-	model "github.com/gxin0426/beegolearn/models"
-	utils "github.com/gxin0426/beegolearn/utils"
 )
 
 type LoginController struct {

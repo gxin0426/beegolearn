@@ -1,9 +1,8 @@
 package controllers
 
 import (
+	"beegotest/model"
 	"fmt"
-
-	model "github.com/gxin0426/beegolearn/model"
 )
 
 type HomeController struct {
@@ -33,7 +32,7 @@ func (this *HomeController) Get() {
 
 		artList, _ = model.FindArticleWithPage(page)
 
-		this.Data["pageCode"] = model.ConfigHomeFooterPageCode(page)
+		this.Data["PageCode"] = model.ConfigHomeFooterPageCode(page)
 		this.Data["HasFooter"] = true
 	}
 	fmt.Println("islogin:", this.IsLogin, this.Loginuser)
