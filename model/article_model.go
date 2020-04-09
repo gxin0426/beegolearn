@@ -2,6 +2,7 @@ package model
 
 import (
 	"fmt"
+	"log"
 	"strconv"
 
 	utils "beegotest/utils"
@@ -99,7 +100,7 @@ func QueryArticleRowNum() int {
 	num := 0
 
 	row.Scan(&num)
-	fmt.Println("yigong :", num)
+	//fmt.Println("yigong :", num)
 	return num
 }
 
@@ -111,7 +112,7 @@ func SetArticleRowsNum() {
 //----------按照标签查询-------------
 
 func QueryArticleWithTag(tag string) ([]Article, error) {
-	sql := "where tags like '%," + tag + ",%'"
+	sql := " where tags like '%," + tag + ",%'"
 	sql += " or tags like '%," + tag + "'"
 	sql += " or tags like '" + tag + ",%'"
 	sql += " or tags like '" + tag + "'"
@@ -120,7 +121,7 @@ func QueryArticleWithTag(tag string) ([]Article, error) {
 }
 
 func QueryArticleWithId(id int) Article {
-	row := utils.QueryRowDB("select id, title, tags, content, author, createtime from article where id =" + strconv.Itoa(id))
+	row := utils.QueryRowDB("select id, title, tags, short, content, author, createtime from article where id =" + strconv.Itoa(id))
 	title := ""
 	tags := ""
 	short := ""
@@ -130,6 +131,47 @@ func QueryArticleWithId(id int) Article {
 	createtime = 0
 
 	row.Scan(&id, &title, &tags, &short, &content, &author, &createtime)
+
+	//fmt.Println(id, title, tags, short, content, author, createtime)
 	art := Article{id, title, tags, short, content, author, createtime}
+	fmt.Println(art)
 	return art
+}
+
+func UpdateArticle(art Article) (int64, error) {
+	return utils.ModifyDB("update article set title=?, tags=?, short=?, content=? where id=?",
+		art.Title, art.Tags, art.Short, art.Content, art.Id)
+}
+
+func DeleteArticle(artId int) (int64, error) {
+	i, err := deleteArticleWithId(artId)
+
+	SetArticleRowsNum()
+	return i, err
+}
+
+func deleteArticleWithId(id int) (int64, error) {
+	return utils.ModifyDB("delete from article where id = ?", id)
+}
+
+//查询标签，返回一个字段的列表
+func QueryArticleWithParam(param string) []string {
+	rows, err := utils.QueryDB(fmt.Sprintf("select %s from article", param))
+
+	if err != nil {
+		fmt.Println(err)
+		log.Println(err)
+	}
+
+	var paramList []string
+
+	for rows.Next() {
+		args := ""
+
+		rows.Scan(&args)
+
+		paramList = append(paramList, args)
+	}
+
+	return paramList
 }

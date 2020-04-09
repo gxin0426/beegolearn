@@ -15,11 +15,7 @@ func (this *HomeController) Get() {
 	//标签  http://localhost:8080?tag=web
 
 	tag := this.GetString("tag")
-
-	fmt.Println("tag:", tag)
-
 	page, _ := this.GetInt("page")
-
 	var artList []model.Article
 
 	if len(tag) > 0 {
