@@ -6,6 +6,7 @@ import (
 	"log"
 
 	"github.com/astaxie/beego"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 var db *sql.DB

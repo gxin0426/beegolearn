@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	_ "github.com/go-sql-driver/mysql"
+
 	"github.com/russross/blackfriday"
 	"github.com/sourcegraph/syntaxhighlight"
 )
