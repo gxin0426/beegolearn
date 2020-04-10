@@ -70,7 +70,7 @@ func MakeHomeBlocks(articles []Article, isLogin bool) template.HTML {
 		t.Execute(&buffer, homeParam)
 		htmlHome += buffer.String()
 	}
-	fmt.Println("htmlHome-->", template.HTML(htmlHome))
+	//fmt.Println("htmlHome-->", template.HTML(htmlHome))
 	return template.HTML(htmlHome)
 }
 
@@ -118,8 +118,8 @@ func ConfigHomeFooterPageCode(page int) HomeFooterPageCode {
 		pageCode.HasNext = true
 	}
 
-	pageCode.PreLink = "/page=" + strconv.Itoa(page-1)
-	pageCode.NextLink = "/page=" + strconv.Itoa(page+1)
+	pageCode.PreLink = "/?page=" + strconv.Itoa(page-1)
+	pageCode.NextLink = "/?page=" + strconv.Itoa(page+1)
 	return pageCode
 
 }

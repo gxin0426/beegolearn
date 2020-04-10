@@ -14,7 +14,7 @@ type BaseController struct {
 
 func (this *BaseController) Prepare() {
 	loginuser := this.GetSession("loginuser")
-	fmt.Println("loginuser ----->", loginuser)
+	fmt.Println("loginuser ---> ", loginuser)
 	if loginuser != nil {
 		this.IsLogin = true
 		this.Loginuser = loginuser

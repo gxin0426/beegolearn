@@ -25,3 +25,77 @@
 2020/04/09 14:38:39.433 [I] [asm_amd64.s:1373]  http server Running on http://:9092
 2020/04/09 14:48:32.858 [I] [asm_amd64.s:1373]  http server Running on http://:9092
 2020/04/09 16:45:44.114 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 16:48:02.835 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 16:49:54.971 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 17:01:39.375 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 17:02:41.467 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 17:09:19.523 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 17:21:07.499 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 19:36:21.230 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 19:40:19.857 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 19:41:40.324 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 19:47:13.698 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/09 19:48:56.960 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 09:11:42.049 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 09:36:37.311 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:12:37.813 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:12:40.950 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:12:42.943 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:28:38.477 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:29:28.793 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:31:22.833 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:31:26.059 [C] [panic.go:967]  the request url is  /aboutme
+2020/04/10 10:31:26.060 [C] [panic.go:967]  Handler crashed with error can't find templatefile in the path:views/aboultme.html
+2020/04/10 10:31:26.061 [C] [panic.go:967]  c:/go/src/runtime/panic.go:967
+2020/04/10 10:31:26.062 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/template.go:75
+2020/04/10 10:31:26.063 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:306
+2020/04/10 10:31:26.064 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:257
+2020/04/10 10:31:26.066 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:237
+2020/04/10 10:31:26.067 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:865
+2020/04/10 10:31:26.068 [C] [panic.go:967]  c:/go/src/net/http/server.go:2807
+2020/04/10 10:31:26.069 [C] [panic.go:967]  c:/go/src/net/http/server.go:1895
+2020/04/10 10:31:26.069 [C] [panic.go:967]  c:/go/src/runtime/asm_amd64.s:1373
+2020/04/10 10:31:26.071 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/04/10 10:31:57.925 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:32:01.770 [C] [panic.go:967]  the request url is  /aboutme
+2020/04/10 10:32:01.771 [C] [panic.go:967]  Handler crashed with error can't find templatefile in the path:views/aboultme.html
+2020/04/10 10:32:01.772 [C] [panic.go:967]  c:/go/src/runtime/panic.go:967
+2020/04/10 10:32:01.773 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/template.go:75
+2020/04/10 10:32:01.774 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:306
+2020/04/10 10:32:01.775 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:257
+2020/04/10 10:32:01.775 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:237
+2020/04/10 10:32:01.776 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:865
+2020/04/10 10:32:01.776 [C] [panic.go:967]  c:/go/src/net/http/server.go:2807
+2020/04/10 10:32:01.777 [C] [panic.go:967]  c:/go/src/net/http/server.go:1895
+2020/04/10 10:32:01.777 [C] [panic.go:967]  c:/go/src/runtime/asm_amd64.s:1373
+2020/04/10 10:32:01.778 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/04/10 10:32:02.537 [C] [panic.go:967]  the request url is  /aboutme
+2020/04/10 10:32:02.538 [C] [panic.go:967]  Handler crashed with error can't find templatefile in the path:views/aboultme.html
+2020/04/10 10:32:02.538 [C] [panic.go:967]  c:/go/src/runtime/panic.go:967
+2020/04/10 10:32:02.540 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/template.go:75
+2020/04/10 10:32:02.541 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:306
+2020/04/10 10:32:02.542 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:257
+2020/04/10 10:32:02.543 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:237
+2020/04/10 10:32:02.545 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:865
+2020/04/10 10:32:02.545 [C] [panic.go:967]  c:/go/src/net/http/server.go:2807
+2020/04/10 10:32:02.546 [C] [panic.go:967]  c:/go/src/net/http/server.go:1895
+2020/04/10 10:32:02.546 [C] [panic.go:967]  c:/go/src/runtime/asm_amd64.s:1373
+2020/04/10 10:32:02.547 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/04/10 10:32:23.737 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:34:00.409 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:34:05.251 [C] [panic.go:967]  the request url is  /aboutme
+2020/04/10 10:34:05.252 [C] [panic.go:967]  Handler crashed with error can't find templatefile in the path:views/aboultme.html
+2020/04/10 10:34:05.254 [C] [panic.go:967]  c:/go/src/runtime/panic.go:967
+2020/04/10 10:34:05.255 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/template.go:75
+2020/04/10 10:34:05.256 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:306
+2020/04/10 10:34:05.258 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:257
+2020/04/10 10:34:05.259 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/controller.go:237
+2020/04/10 10:34:05.260 [C] [panic.go:967]  F:/go_project/pkg/mod/github.com/astaxie/beego@v1.12.1/router.go:865
+2020/04/10 10:34:05.261 [C] [panic.go:967]  c:/go/src/net/http/server.go:2807
+2020/04/10 10:34:05.263 [C] [panic.go:967]  c:/go/src/net/http/server.go:1895
+2020/04/10 10:34:05.263 [C] [panic.go:967]  c:/go/src/runtime/asm_amd64.s:1373
+2020/04/10 10:34:05.265 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/04/10 10:34:46.798 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:35:15.638 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 10:35:47.228 [I] [asm_amd64.s:1373]  http server Running on http://:9092
+2020/04/10 11:46:22.436 [I] [asm_amd64.s:1373]  http server Running on http://:9092

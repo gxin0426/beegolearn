@@ -12,18 +12,15 @@
 <body>
 {{template "block/nav.html" .}}
 <div id="main">
-
     <div id="album-box">
     {{range .Album}}
         <div class="album-item" style='background-image: url("{{.Filepath}}");'></div>
     {{end}}
     </div>
-
     <form method="post">
         <input type="file" id="album-upload-file" name="upload">
         <input type="button" id="album-upload-button" value="提交文件">
     </form>
 </div>
-
 </body>
 </html>
